@@ -1,0 +1,30 @@
+body {
+    background-color: cadetblue;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.portrait {
+    max-width: 50%;
+}
+
+section.top {
+    text-align: center;
+    color: white;
+    font-family: sans-serif
+}
+
+li {
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0.5em 0;/* top/bottom  left/right */
+}
+
+img.portrait {
+    display: block;
+    margin: 0 auto;
+}
+
