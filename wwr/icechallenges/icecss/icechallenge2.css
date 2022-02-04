@@ -1,0 +1,19 @@
+main {
+    width: 1024px;
+    margin: 0 auto
+}
+
+.heading img {
+width: 1024px;
+display: block;
+}
+div.body {
+    text-align: center;
+    background-color: azure;
+}
+.Body img{
+    max-width: 250px;
+    border: 15px solid black;
+    border-radius: 50%;
+    margin: 50px 25px;
+}
