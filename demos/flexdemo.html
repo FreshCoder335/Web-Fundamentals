@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex demo</title>
+    <style>
+        header {
+            background-color: rgb(0, 217, 255);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 0.8rem;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: gold;
+            background-color: red;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .flex-container section {
+            flex: 200px;
+            border: 1px solid black;
+            padding: 1em;
+        }
+
+        @media screen and (max-width: 400px){
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Page 1</a>
+            <a href="#">Page 2</a>
+            <a href="#">Page 3</a>
+            <a href="#">Page 4</a>
+            <a href="#">Page 5</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Flex demo</h1>
+        <div class="Flex containter">
+            <section>
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Quibusdam eaque recusandae ut similique quia vero dolorem quasi explicabo illo. 
+                Sapiente tempore laboriosam explicabo pariatur? Debitis, asperiores rerum. Labore, veniam. Consequatur?</p>
+                <section>
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Quibusdam eaque recusandae ut similique quia vero dolorem quasi explicabo illo. 
+                Sapiente tempore laboriosam explicabo pariatur? Debitis, asperiores rerum. Labore, veniam. Consequatur?</p>
+                </section>
+            <h2>Section 3</h2>
+            <section>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Quibusdam eaque recusandae ut similique quia vero dolorem quasi explicabo illo. 
+                Sapiente tempore laboriosam explicabo pariatur? Debitis, asperiores rerum. Labore, veniam. Consequatur?</p>
+            </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
