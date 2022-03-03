@@ -174,3 +174,18 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.Home {
+  width: 400px;
+  height: 400px;
+}
+
+.Pre-Built {
+  width: 400px;
+  height: 400px;
+}
+
+.Assemble {
+  width: 400px;
+  height: 400px;
+}
