@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+}
+
+.card {
+    background-color: white;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.small-title {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.card footer {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
