@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.header-content {
+ display: flex;
+ background-color: rgba(0, 255, 255, 0.438);
+ justify-content: space-between;
+ align-items: center;
+ padding: 30px 10%;
+    }
+
+.logo {
+    cursor: pointer;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: aqua;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+h2 {
+    color: aqua;
+}
+
+
+body {
+    background-image: url("cool-website-background-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Staatliches', 'Times New Roman', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    padding: 50px;
+}
+
+.pcpic {
+    grid-column: 1/4;
+}
+
+.pcpic:hover {
+    color:rgba(0, 255, 255, 0.426)
+}
+
+.builtpc {
+    transition: transform .5s;
+    border-style: solid;
+    border-width: 20px;
+    border-color: blue
+}
+
+.builtpc:hover {
+    transform: scale(1.1);
+    opacity: 2;
+}
+
+.pcpic2 {
+    grid-column: 10/12;
+    border: 20px;
+    border-color: solid red;
+}
+
+.pcparts {
+    transition: transform .5s;
+    border-style: solid;
+    border-width: 20px;
+    border-color: red  
+}
+
+.pcparts:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+    background-color: rgba(0, 255, 255, 0.426);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.social:hover {
+    color: aqua;
+}

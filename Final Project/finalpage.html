@@ -5,38 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bear's PC parts</title>
+    <link rel="stylesheet" href="styles/finalpage.css">
 </head>
 <body>
-    <div class="content">
+    <div id="content">
         <header>
             <div class="header-content">
-                <img src="FinalImages/rsz_1logoimage.jpg" alt="The Bear's PC parts" style="width: 100px; height: 100px;">
-                <h1>Let's Get started</h1>
+                <img class="logo" src="FinalImages/rsz_1logoimage.jpg" alt="The Bear's PC parts" style="width: 100px; height: 100px;">
                 <nav>
-                    <a href="finalpage.html">Home</a>
-                    <a href="prebuilt.html">Pre-builts</a>
-                    <a href="parts.html">Build Your Own</a>
+                    <ul class="navlinks">
+                        <li><a href="finalpage.html">Home</a></li>
+                        <li><a href="prebuilt.html">Pre-builts</a></li>
+                        <li><a href="parts.html">Build Your Own</a></li>
+                    </ul>
                 </nav>
+                <form action="thankyou.html"></form>
+                <button type="submit">Add to Cart</button>
             </div>
         </header>
         <main>
             <div class="main-grid">
-                <h2>Pre-Builts</h2>
-                <img src="FinalImages/christian-wiediger-XfSk_BMLj0A-unsplash.jpg" alt="Let's Get started" style="width:600px; height:600px;">
-                <h2>Build Your own</h2>
-                <img src="FinalImages/redd-YYMVV-qMD6Q-unsplash.jpg" alt="Assebmly" style="width: 600px; height: 600px;">
+                <div class="pcpic">
+                    <h2>Pre-Builts</h2>
+                    <a href="prebuilt.html"><img class="builtpc" src="FinalImages/christian-wiediger-XfSk_BMLj0A-unsplash.jpg" alt="Let's Get started" style="width:400px; height:400px;"></a>
+                </div>
+                <div class="pcpic2">
+                    <h2>Build Your own</h2>
+                    <a href="parts.html"><img class="pcparts" src="FinalImages/redd-YYMVV-qMD6Q-unsplash.jpg" alt="Assebmly" style="width: 400px; height: 400px;"></a>
+                </div>
             </div>
         </main>
+    </div>
         <footer>
             <div class="logo">
             <img src="FinalImages/rsz_1logoimage.jpg" alt="The Bear's PC parts" style="width: 100px; height: 100px;">
             </div>
             <div class="social">
-                <img src="FinalImages/facebook.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
-                <img src="FinalImages/instagram.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
-                <img src="FinalImages/twitter.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="FinalImages/facebook.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="FinalImages/instagram.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="FinalImages/twitter.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
+                </a>
             </div>
         </footer>
-    </div>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>
