@@ -78,7 +78,7 @@ body {
 }
 
 .pcpic {
-    grid-column: 1/4;
+    grid-column: 2/5;
 }
 
 .pcpic:hover {
