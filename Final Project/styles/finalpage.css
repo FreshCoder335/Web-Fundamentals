@@ -10,7 +10,7 @@
  background-color: rgba(0, 255, 255, 0.438);
  justify-content: space-between;
  align-items: center;
- padding: 30px 10%;
+ padding: 10px 5%;
     }
 
 .logo {
@@ -19,6 +19,8 @@
 
 .navlinks {
     list-style: none;
+    margin: 0 auto;
+    
 }
 
 .navlinks li{
@@ -34,10 +36,51 @@
     color: aqua;
 }
 
+.dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-family: "Staatliches", "Times new roman", "sans-serif";
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .navlinks {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .navlinks a {
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navlinks a:hover {background-color: blue;
+    }
+  
+  .dropdown:hover .navlinks {display: block;
+    }
+  
+  .dropdown:hover .dropbtn {background-color: aqua;
+    }
+
 button {
     padding: 9px 25px;
     background-color: blueviolet;
     border: none;
+    font-family: "Staatliches", "Times new roman", "sans-serif";
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
