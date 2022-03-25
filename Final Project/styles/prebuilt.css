@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.header-content {
+ display: flex;
+ background-color: rgba(0, 255, 255, 0.438);
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 5%;
+    }
+
+h1 {
+  font-size: 50px; 
+  color: red
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navlinks {
+    list-style: none;
+    margin: 0 auto;
+    
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    transition: all 0.3s ease 0s;
+    color: aqua;
+}
+
+
+
+
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+h2 {
+    color: aqua;
+}
+
+.products {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(12, 100px);
+}
+
+
+body {
+    background-image: url("cool-website-background-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Staatliches', 'Times New Roman', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(12, 100px);
+    padding: 50px;
+    color:rgba(0, 255, 255, 0.426);
+    text-align: center;
+}
+
+.description {
+    color:aqua;
+    text-align: center;
+}
+
+.omengaming {
+    grid-column: 2/5;
+}
+.omenpc {
+    transition: transform .5s;
+    border-style: solid;
+    border-color: blue;
+    border-width: 20px;
+}
+
+.omenpc:hover {
+    transform: scale(1.1);
+    opacity: 2;
+}
+
+.predatorgaming {
+    grid-column: 10/12;
+}
+
+.predatorpc {
+    transition: transform .5s;
+    border-style: solid;
+    border-color: red;
+    border-width: 20px;
+}
+
+.predatorpc:hover {
+    transform: scale(1.1);
+    opacity: 2;
+}
+
+.razorgaming {
+    grid-column: 2/5;
+    grid-row: 9/11
+}
+
+.razorpc {
+    transition: transform .5s;
+    border-style: solid;
+    border-color: green;
+    border-width: 20px;
+}
+
+.razorpc:hover {
+    transform: scale(1.1);
+    opacity: 2;
+}
+
+.alienwaregaming {
+    grid-column: 10/12;
+    grid-row: 9/11
+}
+
+.alienware {
+    transition: transform .5s;
+    border-style: solid;
+    border-color: gold;
+    border-width: 20px;
+}
+
+.alienware:hover {
+    transform: scale(1.1);
+    opacity: 2;
+}
+
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+    background-color: rgba(0, 255, 255, 0.426);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.social:hover {
+    color: aqua;
+}
