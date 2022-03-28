@@ -5,37 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parts</title>
+    <link rel="stylesheet" href="styles/parts.css">
 </head>
 <body>
     <div class="data">
         <header>
-            <div class="header-info">
-                <img src="FinalImages/rsz_1logoimage.jpg" alt="The Bear's PC parts" style="width: 100px; height: 100px;">
-                <h1>Parts</h1>
-                <nav>
-                    <a href="finalpage.html">Home</a>
-                    <a href="prebuilt.html">Pre-builts</a>
-                    <a href="parts.html">Build Your Own</a>
+            <div class="header-content">
+                <img class="logo" src="FinalImages/rsz_1logoimage.jpg" alt="The Bear's PC parts" style="width: 100px; height: 100px;">
+                <nav class="dropdown">
+                    <button class="dropbtn">Navigation</button>
+                    <ul class="navlinks">
+                        <li><a href="finalpage.html">Home</a></li>
+                        <li><a href="prebuilt.html">Pre-builts</a></li>
+                        <li><a href="parts.html">Build Your Own</a></li>
+                    </ul>
                 </nav>
+                <button type="submit">Add to Cart</button>
             </div>
         </header>
         <main>
-            <p>Build your own PC! With the best Parts out there
+            <h2 class="Page-title">Build your Own</h2>
+            <p class="description">Build your own PC! With the best Parts out there
                 all you need to do is order, one click away!
             </p>
-            <h2>Assemble</h2>
-            <img src="FinalImages/pc-buildout-2016-guide.jpg" alt="Assemble" style="width: 600px; height: 600px;">
-            <h2>Browse Parts</h2>
-            <img src="FinalImages/pc-component-compatibility.jpg" alt="Browse" style="width: 600px; height: 600px;">
+            <div class="main-grid">
+                <div class="pcpic">
+                    <h2>Assemble</h2>
+                    <img class="builtpc" src="FinalImages/pc-buildout-2016-guide.jpg" alt="Assemble" style="width: 400px; height: 400px;">
+                </div>
+                <div class="pcpic2">
+                    <h2>Browse Parts</h2>
+                    <img class="pcparts" src="FinalImages/pc-component-compatibility.jpg" alt="Browse" style="width: 400px; height: 400px;">
+                </div>
+            </div>
         </main>
         <footer>
             <div class="logo">
                 <img src="FinalImages/rsz_1logoimage.jpg" alt="The Bear's PC parts" style="width: 100px; height: 100px;">
                 </div>
+                <ul>
+                    <li><a href="site-plan.html" class="plan">Site Plan</a></li>
+                </ul>
                 <div class="social">
-                    <img src="FinalImages/facebook.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
-                    <img src="FinalImages/instagram.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
-                    <img src="FinalImages/twitter.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="FinalImages/facebook.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="FinalImages/instagram.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="FinalImages/twitter.png" alt="The Bear's PC parts" style="width: 50px; height: 50px;">
+                    </a>
                 </div>
         </footer>
     </div>

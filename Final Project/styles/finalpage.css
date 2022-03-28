@@ -167,6 +167,14 @@ footer {
     align-items: center;
     }
 
+.plan {
+    text-align: center;
+}
+
+.plan:hover {
+    color: aqua;
+}
+
 .social:hover {
     color: aqua;
 }
